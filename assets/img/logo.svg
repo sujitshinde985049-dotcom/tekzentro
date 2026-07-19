@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 56" role="img" aria-labelledby="title desc">
+<title id="title">TekZentro logo</title><desc id="desc">A geometric T and Z monogram with TekZentro wordmark</desc>
+<defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+<rect width="56" height="56" rx="16" fill="#0b1020"/>
+<path d="M13 15h30v7H32v20h-8V22H13z" fill="url(#g)"/>
+<path d="M34 26h11l-9 11h10v6H32c-3 0-4-3-2-5l9-11h-5z" fill="#fff"/>
+<text x="68" y="37" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="800" fill="#0b1020">Tek<tspan fill="url(#g)">Zentro</tspan></text>
+</svg>

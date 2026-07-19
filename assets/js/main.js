@@ -1,0 +1,7 @@
+
+const menuBtn=document.querySelector('.menu-btn');const navLinks=document.querySelector('.nav-links');
+menuBtn?.addEventListener('click',()=>{navLinks.classList.toggle('open');menuBtn.setAttribute('aria-expanded',navLinks.classList.contains('open'))});
+document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>btn.parentElement.classList.toggle('open')));
+document.querySelectorAll('.filter-btn').forEach(btn=>btn.addEventListener('click',()=>{document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');const f=btn.dataset.filter;document.querySelectorAll('.portfolio-item').forEach(i=>i.classList.toggle('hidden',f!=='all'&&!i.dataset.category.includes(f)))}));
+const form=document.querySelector('#contactForm');form?.addEventListener('submit',e=>{e.preventDefault();const status=document.querySelector('.form-status');const data=new FormData(form);const required=['name','email','service','message'];const missing=required.some(k=>!String(data.get(k)||'').trim());if(missing){status.textContent='Please complete all required fields.';status.style.color='#b42318';return}status.textContent='Thanks! Your project request is ready. Connect this form to your preferred email or CRM endpoint to receive live submissions.';status.style.color='#08745a';form.reset()});
+document.querySelectorAll('[data-year]').forEach(el=>el.textContent=new Date().getFullYear());
